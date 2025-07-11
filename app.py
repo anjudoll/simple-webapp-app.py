@@ -1,15 +1,13 @@
-import os
-from flask import flask
-app - Flask(_name_)
+from flask import Flask
+app = Flask(__name__)
 
 @app.route("/")
 def main():
     return "Welcome!"
 
-@app.route('/how are you")
+@app.route("/how_are_you")
 def hello():
-    return 'I am good, how about you?"
+    return "I am good, how about you?"
 
-  if _name_"" "_main_":
-      app.run()
-           
+if __name__ == "__main__":
+    app.run(host="0.0.0.0")
